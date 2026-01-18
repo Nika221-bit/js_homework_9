@@ -36,3 +36,50 @@ const date = {
     year:"2026"
 }
 console.log(Object.values(date))
+
+//ვერსია ორი
+const now = new Date();
+
+const date1 = {
+    day: now.getDate(),
+    month:now.getMonth() + 1,
+    year: now.getFullYear()
+};
+console.log(`${date1.day} / ${date1.month} / ${date1.year}` )
+
+//დავალება 7.4
+
+let obj = {
+    '11key': 'მნიშვნელობა1', 
+    'key-8': 'მნიშვნელობა2',
+    ' key4': 'მნიშვნელობა3'}; 
+
+console.log(Object.values(obj))
+
+//დავალება 7.5
+
+let obj1 = { 
+    '9name': 10, 
+     key7: 20, 
+    'a-b': 30, 
+    'city 10': 40, 
+     city10: 50 
+};
+console.log(Object.values(obj1))
+
+//დავალება 7.6
+
+let products = { 
+    pr1: 'ბანანი', 
+    pr2: 'მარწყვი', 
+    pr3: 'მსხალი', 
+    pr4: 'მარწყვი', 
+    pr5: 'ატამი', 
+    pr6: 'საზამთრო', 
+    pr7: 'მარწყვი' 
+} 
+
+products.pr2 = "ალუბალი";
+products.pr4 = "ალუბალი";
+products.pr7 = "ალუბალი";
+console.log(Object.values(products))
