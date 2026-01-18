@@ -83,3 +83,46 @@ products.pr2 = "ალუბალი";
 products.pr4 = "ალუბალი";
 products.pr7 = "ალუბალი";
 console.log(Object.values(products))
+
+//დავალება 7.7
+
+  const  car = { 
+      model: { 
+              manufacturer: "BMW", 
+              mark: "X6" 
+      },
+
+      color: "black", 
+      is_left_hand_drive: false,
+      number_of_doors: 5 
+ }; 
+
+console.log(car.color, car.model.manufacturer);
+
+//დავალება 7.8
+
+car.color = "white";
+car.is_left_hand_drive = true;
+console.log(car.color,car.is_left_hand_drive)
+
+//დავალება 7.9
+
+let obj2 = {a: 7, b: 8, c: 9};
+
+let square = Object.values(obj2).map(num => num *2)
+console.log(square)
+
+//დავალება 7.10 
+
+const  book = {    
+title: "JavaScript: The Definitive Guide", 
+author:  "David Flanagan", 
+publisher: "O'Reilly Media",  
+year_of_publication : 2011 
+}; 
+
+
+let keys = Object.keys(book);
+let values = Object.values(book);
+
+console.log(keys,values)
