@@ -225,3 +225,12 @@ const getTotalPrice = (purchases1) => {
     return total
 }
 console.log(getTotalPrice(purchases1)); 
+
+//დავალება 7.17
+
+function getAveragePrice(){
+    let total = getTotalPrice(purchases1) / purchases1.length
+    return  Math.round(total)
+}
+
+console.log(getAveragePrice(purchases1)); 
