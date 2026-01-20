@@ -182,3 +182,46 @@ function getTotalAmount(purchases) {
     return sum
 }
 console.log(getTotalAmount(purchases));
+
+//დავალება 7.15
+
+const  car1 = { 
+  manufacturer: { 
+          name: "BMW", 
+          location: "Munich, Germany", 
+          year_of_establish: 1916 
+  }, 
+  model: "X6", 
+  color: "black", 
+  is_left_hand_drive: false, 
+  number_of_doors: 5 
+}
+
+const getFullModelOfCar = (car1) => {
+    return car.manufacturer,car.model
+}
+console.log(getFullModelOfCar(car1));
+
+//დავალება 7.16
+
+const purchases1 = [{ 
+  item: "hammer", 
+  price: 22 
+},  
+{ 
+  item: "screwdriver", 
+  price: 17 
+}, 
+{ 
+  item: "nails", 
+  price: 8 
+}] 
+
+const getTotalPrice = (purchases1) => {
+    let total = 0;
+    for(let i = 0;i < purchases1.length;i++){
+          total += purchases1[i].price;
+    }
+    return total
+}
+console.log(getTotalPrice(purchases1)); 
