@@ -269,7 +269,24 @@ sayHello();
 
 //დავალება 7.20
 
+const product1 = {
+    weight: 200,
+    quantity: 5,
+    price: 50,
+    photo: "saati.jpg",
+    showInfo: function() {
+        if (this.quantity === 0) {
+           document.getElementById('quantity').innerHTML += '<h3>მარაგი ამოიწურა</h3>';
+        } else {
+           document.getElementById('quantity').innerText += this.quantity;
 
+        }
+    }
+};
+
+product1.showInfo();
+
+//დავალება 7.21
 
 
 
