@@ -91,7 +91,7 @@ console.log(Object.values(products))
               manufacturer: "BMW", 
               mark: "X6" 
       },
-
+  
       color: "black", 
       is_left_hand_drive: false,
       number_of_doors: 5 
@@ -126,3 +126,59 @@ let keys = Object.keys(book);
 let values = Object.values(book);
 
 console.log(keys,values)
+
+//დავალება 7.11
+
+const  book1 = {    
+title: "JavaScript: The Definitive Guide", 
+author: "David Flanagan" 
+}; 
+const  year1 = {    
+year_of_publication: 2011 
+}; 
+
+let  mergeBook = {...book1,...year1};
+console.log(mergeBook)
+
+//დავალება 7.12
+
+const user = { 
+  userName : "superadmin", 
+  password: "Godzilla" 
+} 
+
+console.log(user.userName,user.password);
+
+//დავალება 7.13
+
+const student = { 
+  studentName : "პეტრე მგელაძე", 
+  paydVolum: 700 
+}  
+
+function  canEnrollToCourse(){
+    if(student.paydVolum > 1125){
+      return true
+    }else{
+        return false
+    }
+}
+
+console.log(canEnrollToCourse(student));
+
+//დავალება 7.14
+
+const purchases = {
+  foods: ["Apples", "Bananas", "Eggs", "Cucumber", "Cheese"],
+  amountPaid: [4, 6, 4, 12, 15],
+  date: "27/11/2021"
+};
+
+function getTotalAmount(purchases) {
+    let sum = 0;
+    for(let i = 0;i < purchases.amountPaid.length;i++){
+        sum += purchases.amountPaid[i];
+    }
+    return sum
+}
+console.log(getTotalAmount(purchases));
