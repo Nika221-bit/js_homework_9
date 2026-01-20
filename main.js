@@ -288,6 +288,19 @@ product1.showInfo();
 
 //დავალება 7.21
 
+const student1 = { 
+studentName : "პეტრე მგელაძე", 
+paydVolum: 700 
+} 
+
+function  changeProperty(key, value, obj){
+    obj[key] = value
+}
+
+changeProperty('studentName', 'როინი ვეკუა', student); 
+changeProperty('paydVolum', 900, student);
+
+console.log(student);
 
 
 
