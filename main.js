@@ -234,3 +234,44 @@ function getAveragePrice(){
 }
 
 console.log(getAveragePrice(purchases1)); 
+
+//დავალება 7.18
+
+const  product ={
+    weight:200,
+    quantity:5,
+    price:50,
+    photo:true
+}
+
+const keys1 = Object.keys(product);
+document.getElementById("keys").innerHTML = keys1.join("<br>");
+
+const values1 = Object.values(product);
+document.getElementById("values").innerHTML = values1.join("<br>");
+
+const pairs = Object.entries(product);
+document.getElementById("pairs").innerHTML = pairs
+  .map(([key, value]) => `${key}: ${value}`).join("<br>");
+
+//დავალება 7.19
+
+let person1 = { 
+  firstName: "ნათია", 
+  age: 30, 
+};
+
+function sayHello(){
+    console.log(`გამარჯობა ${person1.firstName}`);
+}
+
+sayHello();
+
+//დავალება 7.20
+
+
+
+
+
+
+
